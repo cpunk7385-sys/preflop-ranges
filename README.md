@@ -4,7 +4,7 @@ Raise-first-in ranges for all five opening positions in 6-max no-limit hold'em c
 
 - `rfi-6max-100bb.json`: one object per position with the range in standard notation (`55+, A2s+, K9s+ …`) and a 169-hand map (`"AKs": "raise" | "fold"`).
 - The tables below: bold = raise, struck through = fold. Rows are the first card, columns the second; above the diagonal suited, below offsuit.
-- Standard range notation parser (TypeScript, 100 lines, no deps): [`ranges.ts`](https://github.com/cpunk7385-sys/rangedrill/blob/master/src/lib/ranges.ts).
+- Standard range notation parser (TypeScript, 100 lines, no deps): [`ranges.ts`](ranges.ts) in this repo. `expandRange("55+, A2s+, KQo")` returns the hand list; `resolveChart` builds the 169-hand map.
 
 These are simplified ranges: one action per hand, no mixed frequencies, tuned for memorising rather than for matching a solver to the percent. They are the free tier of [RangeDrill](https://rangedrill.duckdns.org), a flashcard-style trainer that deals you hands and tracks which ones you keep getting wrong.
 
