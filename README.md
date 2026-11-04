@@ -110,6 +110,41 @@ Fixes welcome as pull requests; please say which solver or source you're correct
 |**3**|~~A3o~~|~~K3o~~|~~Q3o~~|~~J3o~~|~~T3o~~|~~93o~~|~~83o~~|~~73o~~|~~63o~~|~~53o~~|~~43o~~|**33**|~~32s~~|
 |**2**|~~A2o~~|~~K2o~~|~~Q2o~~|~~J2o~~|~~T2o~~|~~92o~~|~~82o~~|~~72o~~|~~62o~~|~~52o~~|~~42o~~|~~32o~~|**22**|
 
+
+## Push/fold (heads-up Nash, no antes)
+
+`pushfold-hu-nash.json`: for every stack from 1 to 25bb, the small blind jamming frequency and the big blind calling frequency per hand class (169 classes, frequency 0..1). Computed for this project: Monte Carlo all-in equities (60k samples per matchup, card removal weighted) and fictitious play to the equilibrium. Summary:
+
+| Stack | SB jams | BB calls |
+|---|---|---|
+| 1bb | 100% | 100% |
+| 2bb | 87.1% | 100% |
+| 3bb | 77.5% | 90.2% |
+| 4bb | 73.9% | 70.5% |
+| 5bb | 70.5% | 60.4% |
+| 6bb | 67.5% | 53.3% |
+| 7bb | 64% | 47.8% |
+| 8bb | 61.6% | 43.7% |
+| 9bb | 59.1% | 40.3% |
+| 10bb | 56.5% | 37% |
+| 11bb | 54.4% | 34.4% |
+| 12bb | 52.7% | 33% |
+| 13bb | 50.4% | 31.2% |
+| 14bb | 47.6% | 29.8% |
+| 15bb | 45.1% | 28.6% |
+| 16bb | 43.7% | 26.9% |
+| 17bb | 42.1% | 25.2% |
+| 18bb | 41.6% | 24% |
+| 19bb | 40.8% | 22.4% |
+| 20bb | 39.9% | 21.5% |
+| 21bb | 39.3% | 20.7% |
+| 22bb | 38.3% | 19.5% |
+| 23bb | 37.7% | 18.8% |
+| 24bb | 37% | 18% |
+| 25bb | 36% | 17.7% |
+
+Browse them with the 13×13 grids and drill them at https://rangedrill.duckdns.org/push-fold
+
 ## License
 
 CC0 1.0. Use the data however you want, attribution appreciated but not required.
